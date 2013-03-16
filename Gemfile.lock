@@ -1,20 +1,42 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    backports (3.1.1)
+    chunky_png (1.2.7)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    eventmachine (1.0.3)
+    fssm (0.2.10)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
-    shotgun (0.9)
+    rack-test (0.6.2)
       rack (>= 1.0)
-    sinatra (1.4.1)
-      rack (~> 1.5, >= 1.5.2)
-      rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
+    sass (3.2.7)
+    sinatra (1.3.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.3)
+      tilt (~> 1.3, >= 1.3.3)
+    sinatra-contrib (1.3.2)
+      backports (>= 2.0)
+      eventmachine
+      rack-protection
+      rack-test
+      sinatra (~> 1.3.0)
+      tilt (~> 1.3)
+    slim (1.3.6)
+      temple (~> 0.5.5)
+      tilt (~> 1.3.3)
+    temple (0.5.5)
     tilt (1.3.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  shotgun
-  sinatra
+  compass
+  sinatra (~> 1.3.6)
+  sinatra-contrib (~> 1.3.2)
+  slim
