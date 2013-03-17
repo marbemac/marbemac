@@ -1,4 +1,3 @@
-@import "compass";
 @import "variables";
 
 /* apply a natural box layout model to all elements */
@@ -11,4 +10,248 @@ html {
 body {
   background: $body-bg-color;
   height: 100%;
+  color: #222;
+  font-family: helvetica;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #222;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  color: #222;
+  font-size: 18px;
+  line-height: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+
+  &:hover {
+
+  }
+}
+
+#container {
+  max-width: $site-max-width;
+  margin: auto;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: $nav-width;
+  text-align: right;
+  padding: 50px 0 0 0;
+
+  .social-links {
+    overflow: hidden;
+    margin: 10px 0 110px 0;
+    li {
+      float: right;
+      width: 40px;
+      height: 40px;
+      margin: 0 0 0 10px;
+
+      a {
+        transition: all 0.2s ease-in;
+        background: #CCC;
+        border-radius: 1000px;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+          background: $link-color;
+          color: $body-bg-color;
+        }
+      }
+      &.active {
+        a {
+          font-weight: bold;
+          color: $action-color;
+        }
+      }
+    }
+  }
+  .portfolio-links {
+    li {
+      margin: 0 0 40px 0;
+
+      h3 {
+        color: #999;
+        font-weight: normal;
+      }
+      &.on {
+        a {
+          color: $action-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding: 50px 25px 0 $nav-width + 50;
+
+  >.summary {
+    margin: 0 0 72px 0;
+  }
+}
+
+.tags {
+  li {
+    font-size: 12px;
+    display: inline-block;
+
+    .name {
+      padding: 5px 8px;
+      cursor: default;
+      height: 20px;
+      display: inline-block;
+    }
+    .name {
+      background: #CCC;
+      color: #666;
+    }
+    a {
+      transition: all 0.2s ease-in;
+      &:hover {
+        background: $link-color;
+        color: $body-bg-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.portfolio-item {
+  margin: 0 0 150px 0;
+
+  .title {
+    overflow: hidden;
+
+    h3 {
+      float: left;
+    }
+    .tags {
+      float: left;
+      margin: -1px 0 0 20px;
+
+
+      .live {
+        background: $action-color;
+        color: $body-bg-color;
+      }
+    }
+  }
+  p {
+    margin: 15px 0 20px 0;
+  }
+  .photo-grid {
+    height: 450px;
+
+    .row {
+      &.span1 {
+        height: 10%;
+      }
+      &.span2 {
+        height: 20%;
+      }
+      &.span3 {
+        height: 30%;
+      }
+      &.span4 {
+        height: 40%;
+      }
+      &.span5 {
+        height: 50%;
+      }
+      &.span6 {
+        height: 60%;
+      }
+      &.span7 {
+        height: 70%;
+      }
+      &.span8 {
+        height: 80%;
+      }
+      &.span9 {
+        height: 90%;
+      }
+      &.span10 {
+        height: 100%;
+      }
+    }
+    .columns {
+      height: 100%;
+      background: $body-bg-color;
+      transition: all 1s ease-in;
+
+      &.pad-top {
+        padding-top: 5px;
+      }
+      &.pad-right {
+        padding-right: 5px;
+      }
+      &.pad-bottom {
+        padding-bottom: 5px;
+      }
+      &.pad-left {
+        padding-left: 5px;
+      }
+    }
+    .bwWrapper {
+      width: 100%;
+      height: 100%;
+      canvas {
+        z-index: 400;
+      }
+    }
+    .photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 500;
+      background: #CCC;
+    }
+  }
+  >.tags {
+    margin: 5px 0 0 0;
+    li {
+      margin: 0 2px 0 0;
+    }
+  }
+
+  &.on {
+    .columns {
+      background: #000;
+    }
+  }
+  &.new-thisthat {
+    .photo-grid {
+      .top {
+        height: 350px;
+      }
+      .bottom {
+        height: 100px;
+      }
+    }
+  }
+}
+
+.bwWrapper {
+  position: relative;
 }

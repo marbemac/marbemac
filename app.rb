@@ -1,7 +1,7 @@
+require 'compass'
 require 'sinatra'
 require "sinatra/reloader" if development?
 require 'slim'
-require 'compass'
 
 configure do
   set :scss, {:style => :compact, :debug_info => false}

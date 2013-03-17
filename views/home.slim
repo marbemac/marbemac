@@ -3,11 +3,287 @@ html
   head
     title The Online Portfolio For Marc MacLeod
     meta name="keywords" content="portfolio, marc macleod"
+    link rel="stylesheet" href="/stylesheets/foundation.css"
+    link rel="stylesheet" href="/stylesheets/reset.css"
     link rel="stylesheet" href="/stylesheets/app.css"
 
-  body
-    div
-      | hello world
+  body data-spy="scroll" data-target=".portfolio-links"
+    #newthisthat
+
+    #container
+
+      nav
+        h1 Marc MacLeod
+        ul.social-links
+          li
+            a href='#' 1
+          li
+            a href='#' 2
+          li
+            a href='#' 3
+          li
+            a href='#' 4
+
+        ul.portfolio-links
+          li.newthisthat
+            h3
+              a href='#newthisthat' New ThisThat
+          li.limelight
+            h3
+              a href='#limelight' Limelight
+          li.mixeem
+            h3
+              a href='#mixeem' Mixeem
+          li.thisthat
+            h3
+              a href='#thisthat' ThisThat
+          li.spruceling
+            h3
+              a href='#spruceling' Spruceling
+          li.ninjathat
+            h3
+              a href='#ninjathat' NinjaThat
+          li.thewhoot
+            h3
+              a href='#thewhoot' The Whoot
+
+      .content
+        p.summary
+          | Hi, my name’s Marc. I’m an entrepreneur and engineer. I resurrected
+            some of my old projects for this portfolio. Unless otherwise noted, each
+            app was built and designed from scratch by me and sometimes one
+            other engineer. Please forgive any bugs, I don’t have time to polish
+            these relics, and many are running on a single server.
+
+        section.portfolio
+          .portfolio-item.new-thisthat data-name='newthisthat'
+            .title
+              h3
+                a href='http://www.getthisthat.com' target='_blank' New ThisThat
+              ul.tags
+                li
+                  span.name.live Live
+
+            p Communal publishing platform.
+
+            .photo-grid
+              .row.span7
+                .large-8.columns.pad-right.pad-bottom
+                  .bwWrapper
+                    img.photo src='images/newthisthat1.jpg'
+                .large-4.columns.pad-bottom
+                  .bwWrapper
+                    img.photo src='images/newthisthat4.jpg'
+              .row.span3
+                .large-4.columns
+                  .bwWrapper
+                    img.photo src='images/newthisthat3.jpg'
+                .large-8.columns.pad-left
+                  .bwWrapper
+                    img.photo src='images/newthisthat2.jpg'
+
+            ul.tags
+              li
+                a.name href='#' target='_blank' Ruby on Rails
+              li
+                a.name href='#' target='_blank' HAML
+              li
+                a.name href='#' target='_blank' PostgreSQL
+
+            #limelight
+
+          .portfolio-item.limelight data-name='limelight'
+            .title
+              h3
+                a href='http://limelight.marbemac.com' target='_blank' Limelight
+              ul.tags
+                li
+                  span.name Demo
+
+            p Link sharing around a semantic graph of real world topics.
+
+            .photo-grid
+              .row.span10
+                .large-7.columns.pad-right
+                  .bwWrapper
+                    img.photo src='images/limelight1.jpg'
+                .large-5.columns
+                  .row.span6
+                    .large-12.columns.pad-bottom
+                      .bwWrapper
+                        img.photo src='images/limelight3.jpg'
+                  .row.span4
+                    .large-12.columns
+                      .bwWrapper
+                        img.photo src='images/limelight2.jpg'
+
+
+            ul.tags
+              li
+                a.name href='#' target='_blank' Ruby on Rails
+              li
+                a.name href='#' target='_blank' HAML
+              li
+                a.name href='#' target='_blank' PostgreSQL
+
+            #mixeem
+
+          .portfolio-item.mixeem data-name='mixeem'
+            .title
+              h3
+                a href='http://mixeem.com' target='_blank' Mixeem
+              ul.tags
+                li
+                  span.name.live Live
+
+            p Domain name brainstorm tool.
+
+            .photo-grid
+              .row.span10
+                .large-6.columns.pad-right
+                  .bwWrapper
+                    img.photo src='images/mixeem1.jpg'
+                .large-6.columns
+                  .bwWrapper
+                    img.photo src='images/mixeem2.jpg'
+
+            ul.tags
+              li
+                a.name href='#' target='_blank' Ruby on Rails
+              li
+                a.name href='#' target='_blank' HAML
+              li
+                a.name href='#' target='_blank' PostgreSQL
+
+            #thisthat
+
+          .portfolio-item.thisthat data-name='thisthat'
+            .title
+              h3
+                a href='http://thisthat.marbemac.com' target='_blank' ThisThat
+              ul.tags
+                li
+                  span.name Demo
+
+            p Organize content you share on other networks (Twitter, Facebook) into one beautiful, organized feed.
+
+            .photo-grid
+              .row.span10
+                .large-6.columns.pad-right
+                  .bwWrapper
+                    img.photo src='images/thisthat1.jpg'
+                .large-6.columns
+                  .row.span5
+                    .large-12.columns.pad-bottom
+                      .bwWrapper
+                        img.photo src='images/thisthat2.jpg'
+                  .row.span5
+                    .large-12.columns
+                      .bwWrapper
+                        img.photo src='images/thisthat3.jpg'
+
+            ul.tags
+              li
+                a.name href='#' target='_blank' Ruby on Rails
+              li
+                a.name href='#' target='_blank' HAML
+              li
+                a.name href='#' target='_blank' PostgreSQL
+
+            #spruceling
+
+          .portfolio-item.spruceling data-name='spruceling'
+            .title
+              h3
+                a href='http://spruceling.marbemac.com' target='_blank' Spruceling
+              ul.tags
+                li
+                  span.name Demo
+
+            p A marketplace for parents to exchange used kids clothing.
+
+            .photo-grid
+              .row.span10
+                .large-12.columns
+                  .bwWrapper
+                    img.photo src='images/spruceling1.jpg'
+
+            ul.tags
+              li
+                a.name href='#' target='_blank' Ruby on Rails
+              li
+                a.name href='#' target='_blank' HAML
+              li
+                a.name href='#' target='_blank' PostgreSQL
+
+            #ninjathat
+
+          .portfolio-item.ninjathat data-name='ninjathat'
+            .title
+              h3
+                a href='http://www.ninjathat.com' target='_blank' NinjaThat
+              ul.tags
+                li
+                  span.name.live Live
+
+            p A marketplace where you can outsource tasks to skilled students on-demand.
+
+            .photo-grid
+              .row.span10
+                .large-6.columns.pad-right
+                  .bwWrapper
+                    img.photo src='images/ninjathat1.jpg'
+                .large-6.columns
+                  .bwWrapper
+                    img.photo src='images/ninjathat2.jpg'
+
+            ul.tags
+              li
+                a.name href='#' target='_blank' Ruby on Rails
+              li
+                a.name href='#' target='_blank' HAML
+              li
+                a.name href='#' target='_blank' PostgreSQL
+
+            #thewhoot
+
+          .portfolio-item.thewhoot data-name='thewhoot'
+            .title
+              h3
+                a href='http://thewhoot.marbemac.com' target='_blank' The Whoot
+              ul.tags
+                li
+                  span.name Demo
+
+            p Answers the simple question “Who is doing what tonight?” Use The Whoot to quickly figure out exactly what to do tonight as well as who to do it with.
+
+            .photo-grid
+              .row.span4
+                .large-12.columns
+                  .bwWrapper
+                    img.photo src='images/thewhoot3.jpg'
+              .row.span6
+                .large-4.columns.pad-top
+                  .bwWrapper
+                    img.photo src='images/thewhoot2.jpg'
+                .large-8.columns.pad-left.pad-top
+                  .bwWrapper
+                    img.photo src='images/thewhoot1.jpg'
+
+            ul.tags
+              li
+                a.name href='#' target='_blank' Ruby on Rails
+              li
+                a.name href='#' target='_blank' HAML
+              li
+                a.name href='#' target='_blank' PostgreSQL
+
+    script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    script src='/javascripts/jquery.scrollspy.js'
+    script src='/javascripts/jquery.scrollTo.js'
+    script src='/javascripts/jquery.localscroll.js'
+    script src='/javascripts/jquery.blackandwhite.js'
+    script src='/javascripts/app.js'
 
     - if production?
       script
