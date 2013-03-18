@@ -45,3 +45,31 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
+
+
+# deal with caching
+after "deploy:setup", "create_page_cache"
+desc "Creates the cache dir"
+task :create_page_cache, :roles => :app do
+  run "umask 02 && mkdir -p #{shared_path}/cache"
+end
+
+after "deploy:update_code","symlink_shared_dirs"
+desc "Links the public/cache with the shared/cache"
+task :symlink_shared_dirs, :roles => :app do
+  run "cd #{release_path} && ln -nfs {shared_path}/cache #{release_path}/public/cache"
+end
+
+set :flush_cache, true
+
+task :keep_page_cache do
+  set :flush_cache, false
+end
+
+after "deploy:cleanup", "flush_page_cache"
+desc "Empties the page cache"
+task :flush_page_cache, :roles => :app do
+  if flush_cache
+    run "rm -rf #{shared_path}/cache/*"
+  end
+end
