@@ -57,7 +57,7 @@ end
 after "deploy:update_code","symlink_shared_dirs"
 desc "Links the public/cache with the shared/cache"
 task :symlink_shared_dirs, :roles => :app do
-  run "cd #{release_path} && ln -nfs {shared_path}/cache #{release_path}/public/cache"
+  run "cd #{release_path} && ln -nfs #{shared_path}/cache #{release_path}/public/cache"
 end
 
 set :flush_cache, true
