@@ -9,7 +9,7 @@ set :cache_output_dir, Proc.new { File.join(root, 'public', 'cache') }
 set :cache_enabled, true
 
 configure do
-  set :scss, {:style => :compact, :debug_info => false}
+  set :scss, {:style => :expanded, :debug_info => true}
   Compass.add_project_configuration(File.join(Sinatra::Application.root, 'config', 'compass.rb'))
 end
 
