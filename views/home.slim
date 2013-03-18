@@ -4,6 +4,7 @@ html
     title The Online Portfolio For Marc MacLeod
     meta name="keywords" content="portfolio, marc macleod"
     link rel="stylesheet" href="/stylesheets/foundation.css"
+    link rel="stylesheet" href="/stylesheets/font-awesome.css"
     link rel="stylesheet" href="/stylesheets/reset.css"
     link rel="stylesheet" href="/stylesheets/app.css"
 
@@ -16,13 +17,17 @@ html
         h1 Marc MacLeod
         ul.social-links
           li
-            a href='#' 1
+            a.email href='mailto:me@marbemac.com' target='_blank'
+              i.icon-envelope-alt
           li
-            a href='#' 2
+            a.linkedin href='http://www.linkedin.com/in/marcmacleod' target='_blank'
+              i.icon-linkedin
           li
-            a href='#' 3
+            a.twitter href='http://twitter.com/marbemac' target='_blank'
+              i.icon-twitter
           li
-            a href='#' 4
+            a.github href='http://github.com/marbemac' target='_blank'
+              i.icon-github
 
         ul.portfolio-links
           li.newthisthat
@@ -50,7 +55,7 @@ html
       .content
         p.summary
           | Hi, my name’s Marc. I’m an entrepreneur and engineer. I resurrected
-            some of my old projects for this portfolio. Unless otherwise noted, each
+            some of my old projects for this portfolio. Each
             app was built and designed from scratch by me and sometimes one
             other engineer. Please forgive any bugs, I don’t have time to polish
             these relics, and many are running on a single server.
@@ -59,7 +64,7 @@ html
           .portfolio-item.new-thisthat data-name='newthisthat'
             .title
               h3
-                a href='http://www.getthisthat.com' target='_blank' New ThisThat
+                a href='http://www.getthisthat.com' target='_blank' New ThisThat (temporary name)
               ul.tags
                 li
                   span.name.live Live
@@ -68,27 +73,31 @@ html
 
             .photo-grid
               .row.span7
-                .large-8.columns.pad-right.pad-bottom
+                .small-8.columns.pad-right.pad-bottom
                   .bwWrapper
                     img.photo src='images/newthisthat1.jpg'
-                .large-4.columns.pad-bottom
+                .small-4.columns.pad-bottom
                   .bwWrapper
                     img.photo src='images/newthisthat4.jpg'
               .row.span3
-                .large-4.columns
+                .small-4.columns
                   .bwWrapper
                     img.photo src='images/newthisthat3.jpg'
-                .large-8.columns.pad-left
+                .small-8.columns.pad-left
                   .bwWrapper
                     img.photo src='images/newthisthat2.jpg'
 
             ul.tags
               li
-                a.name href='#' target='_blank' Ruby on Rails
+                a.name href='https://github.com/rails/rails' target='_blank' Ruby on Rails
               li
-                a.name href='#' target='_blank' HAML
+                a.name href='https://github.com/codeguy/Slim' target='_blank' Slim
               li
-                a.name href='#' target='_blank' PostgreSQL
+                a.name href='http://jquery.com/' target='_blank' jQuery
+              li
+                a.name href='http://www.postgresql.org/' target='_blank' PostgreSQL
+              li
+                a.name href='https://github.com/cloudinary/cloudinary_gem' target='_blank' Cloudinary
 
             #limelight
 
@@ -100,31 +109,49 @@ html
                 li
                   span.name Demo
 
-            p Link sharing around a semantic graph of real world topics.
+            p Link sharing around a semantic graph of real world topics. Have also built this app in PHP and Python in the past.
 
             .photo-grid
               .row.span10
-                .large-7.columns.pad-right
+                .small-7.columns.pad-right
                   .bwWrapper
                     img.photo src='images/limelight1.jpg'
-                .large-5.columns
+                .small-5.columns
                   .row.span6
-                    .large-12.columns.pad-bottom
+                    .small-12.columns.pad-bottom
                       .bwWrapper
                         img.photo src='images/limelight3.jpg'
                   .row.span4
-                    .large-12.columns
+                    .small-12.columns
                       .bwWrapper
                         img.photo src='images/limelight2.jpg'
 
 
             ul.tags
               li
-                a.name href='#' target='_blank' Ruby on Rails
+                a.name href='https://github.com/rails/rails' target='_blank' Ruby on Rails
               li
-                a.name href='#' target='_blank' HAML
+                a.name href='https://github.com/haml/haml' target='_blank' Haml
               li
-                a.name href='#' target='_blank' PostgreSQL
+                a.name href='http://jquery.com/' target='_blank' jQuery
+              li
+                a.name href='http://www.mongodb.org/' target='_blank' MongoDB
+              li
+                a.name href='http://www.neo4j.org/' target='_blank' Neo4j
+              li
+                a.name href='http://redis.io/' target='_blank' Redis
+              li
+                a.name href='https://github.com/mperham/sidekiq' target='_blank' Sidekiq
+              li
+                a.name href='http://backbonejs.org/' target='_blank' Backbone.js
+              li
+                a.name href='http://pusher.com/' target='_blank' Pusher
+              li
+                a.name href='https://github.com/seatgeek/soulmate' target='_blank' Soulmate
+              li
+                a.name href='https://github.com/mkdynamic/omniauth-facebook' target='_blank' Facebook
+              li
+                a.name href='https://github.com/arunagw/omniauth-twitter' target='_blank' Twitter
 
             #mixeem
 
@@ -140,20 +167,26 @@ html
 
             .photo-grid
               .row.span10
-                .large-6.columns.pad-right
+                .small-6.columns.pad-right
                   .bwWrapper
                     img.photo src='images/mixeem1.jpg'
-                .large-6.columns
+                .small-6.columns
                   .bwWrapper
                     img.photo src='images/mixeem2.jpg'
 
             ul.tags
               li
-                a.name href='#' target='_blank' Ruby on Rails
+                a.name href='https://github.com/rails/rails' target='_blank' Ruby on Rails
               li
-                a.name href='#' target='_blank' HAML
+                a.name href='https://github.com/codeguy/Slim' target='_blank' Slim
               li
-                a.name href='#' target='_blank' PostgreSQL
+                a.name href='http://jquery.com/' target='_blank' jQuery
+              li
+                a.name href='http://www.postgresql.org/' target='_blank' PostgreSQL
+              li
+                a.name href='https://github.com/mperham/sidekiq' target='_blank' Sidekiq
+              li
+                a.name href='http://pusher.com/' target='_blank' Pusher
 
             #thisthat
 
@@ -169,26 +202,40 @@ html
 
             .photo-grid
               .row.span10
-                .large-6.columns.pad-right
+                .small-6.columns.pad-right
                   .bwWrapper
                     img.photo src='images/thisthat1.jpg'
-                .large-6.columns
+                .small-6.columns
                   .row.span5
-                    .large-12.columns.pad-bottom
+                    .small-12.columns.pad-bottom
                       .bwWrapper
                         img.photo src='images/thisthat2.jpg'
                   .row.span5
-                    .large-12.columns
+                    .small-12.columns
                       .bwWrapper
                         img.photo src='images/thisthat3.jpg'
 
             ul.tags
               li
-                a.name href='#' target='_blank' Ruby on Rails
+                a.name href='https://github.com/rails/rails' target='_blank' Ruby on Rails
               li
-                a.name href='#' target='_blank' HAML
+                a.name href='https://github.com/haml/haml' target='_blank' Haml
               li
-                a.name href='#' target='_blank' PostgreSQL
+                a.name href='http://jquery.com/' target='_blank' jQuery
+              li
+                a.name href='http://www.mongodb.org/' target='_blank' MongoDB
+              li
+                a.name href='https://github.com/defunkt/resque' target='_blank' Resque
+              li
+                a.name href='http://backbonejs.org/' target='_blank' Backbone.js
+              li
+                a.name href='http://pusher.com/' target='_blank' Pusher
+              li
+                a.name href='https://github.com/seatgeek/soulmate' target='_blank' Soulmate
+              li
+                a.name href='https://github.com/mkdynamic/omniauth-facebook' target='_blank' Facebook
+              li
+                a.name href='https://github.com/arunagw/omniauth-twitter' target='_blank' Twitter
 
             #spruceling
 
@@ -204,17 +251,27 @@ html
 
             .photo-grid
               .row.span10
-                .large-12.columns
+                .small-12.columns
                   .bwWrapper
                     img.photo src='images/spruceling1.jpg'
 
             ul.tags
               li
-                a.name href='#' target='_blank' Ruby on Rails
+                a.name href='https://github.com/rails/rails' target='_blank' Ruby on Rails
               li
-                a.name href='#' target='_blank' HAML
+                a.name href='https://github.com/haml/haml' target='_blank' Haml
               li
-                a.name href='#' target='_blank' PostgreSQL
+                a.name href='http://www.postgresql.org/' target='_blank' PostgreSQL
+              li
+                a.name href='https://stripe.com/' target='_blank' Stripe Payments
+              li
+                a.name href='https://github.com/turbovote/awesome-usps' target='_blank' USPS
+              li
+                a.name href='http://jquery.com/' target='_blank' jQuery
+              li
+                a.name href='https://github.com/seatgeek/soulmate' target='_blank' Soulmate
+              li
+                a.name href='https://github.com/mkdynamic/omniauth-facebook' target='_blank' Facebook
 
             #ninjathat
 
@@ -230,20 +287,26 @@ html
 
             .photo-grid
               .row.span10
-                .large-6.columns.pad-right
+                .small-6.columns.pad-right
                   .bwWrapper
                     img.photo src='images/ninjathat1.jpg'
-                .large-6.columns
+                .small-6.columns
                   .bwWrapper
                     img.photo src='images/ninjathat2.jpg'
 
             ul.tags
               li
-                a.name href='#' target='_blank' Ruby on Rails
+                a.name href='https://github.com/rails/rails' target='_blank' Ruby on Rails
               li
-                a.name href='#' target='_blank' HAML
+                a.name href='http://www.postgresql.org/' target='_blank' PostgreSQL
               li
-                a.name href='#' target='_blank' PostgreSQL
+                a.name href='https://stripe.com/' target='_blank' Stripe Payments
+              li
+                a.name href='http://jquery.com/' target='_blank' jQuery
+              li
+                a.name href='https://github.com/mkdynamic/omniauth-facebook' target='_blank' Facebook
+              li
+                a.name href='https://github.com/skorks/omniauth-linkedin' target='_blank' LinkedIn
 
             #thewhoot
 
@@ -259,24 +322,40 @@ html
 
             .photo-grid
               .row.span4
-                .large-12.columns
+                .small-12.columns
                   .bwWrapper
                     img.photo src='images/thewhoot3.jpg'
               .row.span6
-                .large-4.columns.pad-top
+                .small-4.columns.pad-top
                   .bwWrapper
                     img.photo src='images/thewhoot2.jpg'
-                .large-8.columns.pad-left.pad-top
+                .small-8.columns.pad-left.pad-top
                   .bwWrapper
                     img.photo src='images/thewhoot1.jpg'
 
             ul.tags
               li
-                a.name href='#' target='_blank' Ruby on Rails
+                a.name href='https://github.com/rails/rails' target='_blank' Ruby on Rails
               li
-                a.name href='#' target='_blank' HAML
+                a.name href='http://jquery.com/' target='_blank' jQuery
               li
-                a.name href='#' target='_blank' PostgreSQL
+                a.name href='http://www.mongodb.org/' target='_blank' MongoDB
+              li
+                a.name href='https://github.com/defunkt/resque' target='_blank' Resque
+              li
+                a.name href='http://backbonejs.org/' target='_blank' Backbone.js
+              li
+                a.name href='http://pusher.com/' target='_blank' Pusher
+              li
+                a.name href='https://github.com/seatgeek/soulmate' target='_blank' Soulmate
+              li
+                a.name href='https://github.com/mkdynamic/omniauth-facebook' target='_blank' Facebook
+              li
+                a.name href='https://github.com/alexreisner/geocoder' target='_blank' Geocoding
+              li
+                a.name href='https://github.com/groupon/urbanairship' target='_blank' Urban Airship
+
+      a#source-code href='https://github.com/marbemac/marbemac' target='_blank' source code
 
     script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
     script src='/javascripts/jquery.scrollspy.js'
